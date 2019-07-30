@@ -1,4 +1,4 @@
-import torchvision
+import torch
 import runway
 import numpy as np
 
