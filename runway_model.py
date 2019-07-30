@@ -13,7 +13,7 @@ def setup(opts):
     model = torch.hub.load('facebookresearch/pytorch_GAN_zoo:hub',
                           'PGAN', model_name=checkpoint,
                            pretrained=True, useGPU=use_gpu)
-   return model
+return model
 
 @runway.command('generate',
                 inputs={ 'z': runway.vector(length=512, sampling_std=0.5)},
